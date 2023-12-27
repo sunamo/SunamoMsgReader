@@ -1,4 +1,4 @@
-namespace SunamoMsgExt;
+namespace SunamoMsgReader;
 
 public class MsgExtHelper
 {
@@ -25,8 +25,8 @@ public class MsgExtHelper
         var htmlBody = msg.BodyHtml;
 
 #if ASYNC
-            await
+        await
 #endif
-        TFSE.WriteAllText(htmlFile, htmlBody);
+    TFSE.WriteAllText(htmlFile, htmlBody);
     }
 }
