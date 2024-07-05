@@ -15,3 +15,5 @@ global using SunamoMsgReader._sunamo.SunamoXlfKeys;
 global using SunamoMsgReader._sunamo.SunamoExceptions.InSunamoIsDerivedFrom;
 global using SunamoMsgReader._sunamo.SunamoExceptions.OnlyInSE;
 global using SunamoMsgReader._sunamo.SunamoExceptions._AddedToAllCsproj;
+global using System.Diagnostics;
+global using System.Net;
