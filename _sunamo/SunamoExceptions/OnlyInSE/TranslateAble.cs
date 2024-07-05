@@ -1,4 +1,4 @@
-namespace SunamoMsgReader;
+namespace SunamoMsgReader._sunamo.SunamoExceptions.OnlyInSE;
 
 
 internal class TranslateAble

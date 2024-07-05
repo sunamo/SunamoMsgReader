@@ -1,4 +1,4 @@
-namespace SunamoMsgReader;
+namespace SunamoMsgReader._sunamo.SunamoExceptions.OnlyInSE;
 
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;

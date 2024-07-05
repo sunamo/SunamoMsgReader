@@ -1,4 +1,4 @@
-namespace SunamoMsgReader;
+namespace SunamoMsgReader._sunamo.SunamoExceptions._AddedToAllCsproj;
 
 using System;
 using System.Collections.Generic;
