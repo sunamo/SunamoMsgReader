@@ -1,4 +1,4 @@
-//namespace SunamoMsgReader._sunamo.SunamoExceptions._AddedToAllCsproj;
+namespace SunamoMsgReader._sunamo;
 
 internal class CA
 {
