@@ -15,11 +15,11 @@ public class MsgExtHelper
 
     public
 #if ASYNC
-    async Task
+        async Task
 #else
 void
 #endif
-    WriteBodyToHtmlFile(string path, string htmlFile)
+        WriteBodyToHtmlFile(string path, string htmlFile)
     {
         using Storage.Message msg = new(path);
         var htmlBody = msg.BodyHtml;
@@ -27,6 +27,6 @@ void
 #if ASYNC
         await
 #endif
-        TF.WriteAllText(htmlFile, htmlBody);
+            TF.WriteAllText(htmlFile, htmlBody);
     }
 }
