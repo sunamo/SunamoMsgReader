@@ -27,6 +27,6 @@ void
 #if ASYNC
         await
 #endif
-            TF.WriteAllText(htmlFile, htmlBody);
+            File.WriteAllTextAsync(htmlFile, htmlBody);
     }
 }
