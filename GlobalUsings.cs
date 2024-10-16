@@ -6,7 +6,7 @@ global using System.Collections;
 global using System.IO;
 global using System.Linq;
 global using System;
-global using SunamoMsgReader._sunamo.SunamoValues;
+global using SunamoMsgReader;
 global using SunamoMsgReader._sunamo.SunamoExceptions;
 global using System.Diagnostics;
 global using System.Diagnostics.CodeAnalysis;
