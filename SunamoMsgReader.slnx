@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SunamoMsgReader.Tests\\SunamoMsgReader.Tests.csproj" />
+  <Project Path="RunnerMsgReader\\RunnerMsgReader.csproj" />
+  <Project Path="SunamoMsgReader\SunamoMsgReader.csproj" />
+</Solution>
