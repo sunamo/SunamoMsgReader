@@ -9,7 +9,7 @@ public class MsgExtHelper
     /// <summary>
     /// Singleton instance of MsgExtHelper.
     /// </summary>
-    public static MsgExtHelper Instance = null!;
+    public static MsgExtHelper Instance { get; set; } = null!;
 
     private MsgExtHelper()
     {
@@ -26,22 +26,22 @@ public class MsgExtHelper
     /// <summary>
     /// Writes the HTML body of a MSG file to an HTML file.
     /// </summary>
-    /// <param name="path">Path to the input .msg file.</param>
-    /// <param name="htmlFile">Path to the output .html file.</param>
+    /// <param name="msgFilePath">Path to the input .msg file.</param>
+    /// <param name="htmlFilePath">Path to the output .html file.</param>
     public
 #if ASYNC
         async Task
 #else
 void
 #endif
-        WriteBodyToHtmlFile(string path, string htmlFile)
+        WriteBodyToHtmlFile(string msgFilePath, string htmlFilePath)
     {
-        using Storage.Message msg = new(path);
-        var htmlBody = msg.BodyHtml;
+        using Storage.Message message = new(msgFilePath);
+        var htmlBody = message.BodyHtml;
 
 #if ASYNC
         await
 #endif
-            File.WriteAllTextAsync(htmlFile, htmlBody);
+            File.WriteAllTextAsync(htmlFilePath, htmlBody);
     }
 }
