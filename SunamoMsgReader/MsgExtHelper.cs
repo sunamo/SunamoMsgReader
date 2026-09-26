@@ -29,19 +29,13 @@ public class MsgExtHelper
     /// <param name="msgFilePath">Path to the input .msg file.</param>
     /// <param name="htmlFilePath">Path to the output .html file.</param>
     public
-#if ASYNC
         async Task
-#else
-void
-#endif
         WriteBodyToHtmlFile(string msgFilePath, string htmlFilePath)
     {
         using Storage.Message message = new(msgFilePath);
         var htmlBody = message.BodyHtml;
 
-#if ASYNC
         await
-#endif
-            File.WriteAllTextAsync(htmlFilePath, htmlBody);
+            FileAsync.WriteAllTextAsync(htmlFilePath, htmlBody);
     }
 }
