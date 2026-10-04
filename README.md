@@ -1,5 +1,10 @@
 # SunamoMsgReader
 
+## Short description
+
+Obálka nad balíčkem MsgReader pro čtení e-mailových souborů .msg. Obsahuje Runner a testy.
+
+
 Wrapper aroung MsgReader package
 
 ## Overview
